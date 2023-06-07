@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page | SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc2390730c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+                <img src="images/logo.png" alt="logo" class="logo">
+            </a>
+            <ul>
+                <li><img src="images/notification.png" alt="notification"></li>
+                <li><img src="images/inbox.png" alt="inbox"></li>
+                <li><img src="images/video.png" alt="video"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png" alt="profile">
+            </div>
+        </div>
+        <!-- settings menu -->
+        <div class="settings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png" alt="profile">
+                    <div>
+                        <p>John Nichols</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="feedback">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="images/setting.png" alt="settings" class="settings-icon">
+                    <a href="#">Settings & Privacy&nbsp;<img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/help.png" alt="help" class="settings-icon">
+                    <a href="#">Help & Support&nbsp;<img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/display.png" alt="Accessibility" class="settings-icon">
+                    <a href="#">Display & Accessibility&nbsp;<img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="images/logout.png" alt="logout" class="settings-icon">
+                    <a href="#">Logout&nbsp;<img src="images/arrow.png" alt="arrow" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile page -->
+    <div class="profile-container">
+        <img src="images/cover.png" alt="cover" class="cover-img">
+
+        <div class="profile-details">
+            <div class="pd-left">
+                <div class="pd-row">
+                    <img src="images/profile-pic.png" alt="profile" class="pd-image">
+                    <div>
+                        <h3>John Nichols</h3>
+                        <p>120 Friends - 20 Mutual</p>
+                        <img src="images/member-1.png" alt="member 1">
+                        <img src="images/member-2.png" alt="member 2">
+                        <img src="images/member-3.png" alt="member 3">
+                        <img src="images/member-4.png" alt="member 4">
+                    </div>
+                </div>
+            </div>
+            <div class="pd-right">
+                <button type="button"><img src="images/add-friends.png" alt="add friends">Friend</button>
+                <button type="button"><img src="images/message.png" alt="message">Message</button>
+                <br>
+                <a href="#"><img src="images/more.png" alt="see more"></a>
+            </div>
+        </div>
+
+        <div class="profile-info">
+            <div class="info-col">
+                <div class="profile-intro">
+                    <h3>Intro</h3>
+                    <p class="intro-text">The power of belief is incredible. When you believe in yourself, you can
+                        achieve anything you set your mind to. So never give up on your dreams, no matter how big or
+                        small they may seem.&nbsp;<img src="images/feeling.png" alt="smiley face">
+                    </p>
+                    <hr>
+
+                    <ul>
+                        <li><img src="images/profile-job.png" alt="profile job">Director at 33⅓ Media Ltd</li>
+                        <!-- <li><img src="images/profile-job.png" alt="profile job">Interner at LP Records</li> -->
+                        <li><img src="images/profile-study.png" alt="profile study">Studied at Columbia University</li>
+                        <li><img src="images/profile-location.png" alt="profile location">Went to CUNI, New York</li>
+                        <li><img src="images/profile-home.png" alt="profile home">Lives in Manhattan, NY</li>
+                    </ul>
+                </div>
+
+                <!-- photos -->
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Photos</h3>
+                        <a href="#">All Photos</a>
+                    </div>
+                    <div class="photo-box">
+                        <div>
+                            <img src="images/photo1.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <img src="images/photo2.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <img src="images/photo3.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <img src="images/photo4.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <img src="images/photo5.png" alt="profile photo">
+                        </div>
+                        <div>
+                            <img src="images/photo6.png" alt="profile photo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- friends -->
+                <div class="profile-intro">
+                    <div class="title-box">
+                        <h3>Friends</h3>
+                        <a href="#">All Friends</a>
+                    </div>
+                    <p>120 (9 mutual)</p>
+                    <div class="friends-box">
+                        <div>
+                            <img src="images/member-1.png" alt="friend's photo">
+                            <p>Kate</p>
+                        </div>
+                        <div>
+                            <img src="images/member-2.png" alt="friend's photo">
+                            <p>Nathan</p>
+                        </div>
+                        <div>
+                            <img src="images/member-3.png" alt="friend's photo">
+                            <p>Alicia</p>
+                        </div>
+                        <div>
+                            <img src="images/member-4.png" alt="friend's photo">
+                            <p>John</p>
+                        </div>
+                        <div>
+                            <img src="images/member-5.png" alt="friend's photo">
+                            <p>George</p>
+                        </div>
+                        <div>
+                            <img src="images/member-6.png" alt="friend's photo">
+                            <p>Veronica</p>
+                        </div>
+                        <div>
+                            <img src="images/member-7.png" alt="friend's photo">
+                            <p>Paul</p>
+                        </div>
+                        <div>
+                            <img src="images/member-8.png" alt="friend's photo">
+                            <p>Diana</p>
+                        </div>
+                        <div>
+                            <img src="images/member-9.png" alt="friend's photo">
+                            <p>Michael</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post-col">
+                <div class="write-post-container">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png" alt="profile">
+                        <div>
+                            <p>John Nichols</p>
+                            <small>Public&nbsp;<i class="fa-solid fa-caret-down"></i></small>
+                        </div>
+                    </div>
+
+                    <div class="post-input-container">
+                        <textarea rows="3" placeholder="What's on your mind, John?"></textarea>
+
+                        <div class="add-post-links">
+                            <a href="#"><img src="images/live-video.png" alt="video">Live Video</a>
+                            <a href="#"><img src="images/photo.png" alt="photo">Photo/Video</a>
+                            <a href="#"><img src="images/feeling.png" alt="feeling/activity">Photo/Video</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 1 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile">
+                            <div>
+                                <p>John Nichols</p>
+                                <span>June 5, 2023, 13:40</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Subscribe to <span>YouTube channels</span> to watch more videos on web
+                        development
+                        and UI/UX design.&nbsp;<a href="#">#WebDevTuts</a>&nbsp;<a href="#">#LearWebDev</a></p>
+                    <img src="images/feed-image-1.png" alt="programmers" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like-blue.png" alt="like">120</div>
+                            <div><img src="images/comments.png" alt="comments">45</div>
+                            <div><img src="images/share.png" alt="share">20</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 2 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile">
+                            <div>
+                                <p>John Nichols</p>
+                                <span>June 3, 2023, 19:10</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Like and share this video with friends on <span>YouTube</span> and
+                        <span>Facebook</span>. Ask
+                        your doubts in the comments&nbsp;<a href="#">#WebDevTuts</a>&nbsp;<a href="#">#LearWebDev</a>
+                    </p>
+                    <img src="images/feed-image-2.png" alt="campers" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like">150</div>
+                            <div><img src="images/comments.png" alt="comments">55</div>
+                            <div><img src="images/share.png" alt="share">30</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 3 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile">
+                            <div>
+                                <p>John Nichols</p>
+                                <span>June 3, 2023, 19:10</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Like and share this video with friends on <span>YouTube</span> and
+                        <span>Facebook</span>. Ask
+                        your doubts in the comments&nbsp;<a href="#">#WebDevTuts</a>&nbsp;<a href="#">#LearWebDev</a>
+                    </p>
+                    <img src="images/feed-image-3.png" alt="street walking" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like">150</div>
+                            <div><img src="images/comments.png" alt="comments">55</div>
+                            <div><img src="images/share.png" alt="share">30</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 4 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile">
+                            <div>
+                                <p>John Nichols</p>
+                                <span>June 3, 2023, 19:10</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Like and share this video with friends on <span>YouTube</span> and
+                        <span>Facebook</span>. Ask
+                        your doubts in the comments&nbsp;<a href="#">#WebDevTuts</a>&nbsp;<a href="#">#LearWebDev</a>
+                    </p>
+                    <img src="images/feed-image-4.png" alt="working from home" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like">150</div>
+                            <div><img src="images/comments.png" alt="comments">55</div>
+                            <div><img src="images/share.png" alt="share">30</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- post 5 -->
+                <div class="post-container">
+                    <div class="post-row">
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png" alt="profile">
+                            <div>
+                                <p>John Nichols</p>
+                                <span>June 3, 2023, 19:10</span>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </div>
+                    <p class="post-text">Like and share this video with friends on <span>YouTube</span> and
+                        <span>Facebook</span>. Ask
+                        your doubts in the comments&nbsp;<a href="#">#WebDevTuts</a>&nbsp;<a href="#">#LearWebDev</a>
+                    </p>
+                    <img src="images/feed-image-5.png" alt="meeting" class="post-img">
+
+                    <div class="post-row">
+                        <div class="activity-icons">
+                            <div><img src="images/like.png" alt="like">150</div>
+                            <div><img src="images/comments.png" alt="comments">55</div>
+                            <div><img src="images/share.png" alt="share">30</div>
+                        </div>
+                        <div class="post-profile-icon">
+                            <img src="images/profile-pic.png" alt="profile"><i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p>2023&nbsp;&copy;&nbsp;SocialBook | All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
